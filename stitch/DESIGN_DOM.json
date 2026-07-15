@@ -1,0 +1,331 @@
+{
+  "generatedAt": "2026-07-15T05:16:44.478Z",
+  "screenCount": 1,
+  "screens": {
+    "5b6fa413a5e14aa4b036af7ca45a66c3": {
+      "screenId": "5b6fa413a5e14aa4b036af7ca45a66c3",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "header",
+          "layout": "block",
+          "classes": [
+            "bg-surface",
+            "dark:bg-background",
+            "text-primary",
+            "dark:text-primary-fixed",
+            "border-b",
+            "border-outline-variant",
+            "dark:border-outline",
+            "full-width",
+            "top-0",
+            "w-full"
+          ],
+          "childCount": 3
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-grow",
+            "flex",
+            "items-center",
+            "justify-center",
+            "p-margin-mobile",
+            "md:p-margin-desktop",
+            "w-full",
+            "max-w-container-max",
+            "mx-auto"
+          ],
+          "childCount": 12
+        },
+        {
+          "tag": "footer",
+          "layout": "block",
+          "classes": [
+            "bg-surface",
+            "dark:bg-background",
+            "border-t",
+            "border-outline-variant",
+            "dark:border-outline",
+            "full-width",
+            "bottom-0",
+            "w-full",
+            "py-stack-md",
+            "px-margin-mobile"
+          ],
+          "childCount": 2
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "refresh",
+          "classes": [
+            "text-on-surface-variant",
+            "dark:text-on-primary-fixed-variant",
+            "hover:bg-surface-container",
+            "dark:hover:bg-surface-container-highest",
+            "transition-colors",
+            "active:opacity-80",
+            "transition-all",
+            "duration-200",
+            "p-2",
+            "rounded-full",
+            "flex",
+            "items-center",
+            "justify-center"
+          ],
+          "icon": "refresh",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "settings",
+          "classes": [
+            "text-on-surface-variant",
+            "dark:text-on-primary-fixed-variant",
+            "hover:bg-surface-container",
+            "dark:hover:bg-surface-container-highest",
+            "transition-colors",
+            "active:opacity-80",
+            "transition-all",
+            "duration-200",
+            "p-2",
+            "rounded-full",
+            "flex",
+            "items-center",
+            "justify-center"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/settings",
+          "expectedRoute": "/settings",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "Refresh Status",
+          "classes": [
+            "w-full",
+            "bg-secondary",
+            "hover:bg-on-secondary-container",
+            "text-on-secondary",
+            "font-label-md",
+            "text-label-md",
+            "py-3",
+            "px-4",
+            "rounded",
+            "transition-colors",
+            "duration-200",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-2",
+            "active:scale-[0.98]"
+          ],
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "© 2024 Status Refresh Utility. All systems operational.",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Documentation",
+          "href": "#",
+          "classes": [
+            "font-label-sm",
+            "text-label-sm",
+            "text-on-surface-variant",
+            "dark:text-on-primary-fixed-variant",
+            "hover:text-primary",
+            "dark:hover:text-primary-fixed",
+            "transition-colors",
+            "underline-offset-4",
+            "hover:underline"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Privacy Policy",
+          "href": "#",
+          "classes": [
+            "font-label-sm",
+            "text-label-sm",
+            "text-on-surface-variant",
+            "dark:text-on-primary-fixed-variant",
+            "hover:text-primary",
+            "dark:hover:text-primary-fixed",
+            "transition-colors",
+            "underline-offset-4",
+            "hover:underline"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Support",
+          "href": "#",
+          "classes": [
+            "font-label-sm",
+            "text-label-sm",
+            "text-on-surface-variant",
+            "dark:text-on-primary-fixed-variant",
+            "hover:text-primary",
+            "dark:hover:text-primary-fixed",
+            "transition-colors",
+            "underline-offset-4",
+            "hover:underline"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "refresh",
+        "settings",
+        "check_circle",
+        "pending",
+        "sync"
+      ],
+      "images": [
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBEBu6iZmqnbu5mfZnpeIG_q60wlxbDBTFR6epMBGvoWWLIQGEyaWCf1VHskVHvOzc5FEyUxbrwt5_GXttE7qhlutdngXOKpuLsnx5Tgc_VHLyPfE6SbY9rHiQx5T8uSdXUVOWReZJcveWKHEzxZe",
+          "alt": "User Profile"
+        }
+      ],
+      "cssVars": {},
+      "colorPalette": {},
+      "fonts": [
+        "Material Symbols Outlined",
+        "Inter",
+        "JetBrains Mono"
+      ],
+      "layoutHints": {
+        "flexDirection": "col",
+        "gap": "2"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Documentation",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Privacy Policy",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Support",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "refresh",
+          "icon": "refresh",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "settings",
+          "icon": "settings",
+          "action": "navigate",
+          "route": "/settings",
+          "expectedBehavior": "navigate:/settings"
+        },
+        {
+          "kind": "button",
+          "label": "Refresh Status",
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "© 2024 Status Refresh Utility. All systems operational.",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "link",
+          "label": "Documentation",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Privacy Policy",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Support",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "© 2024 Status Refresh Utility. All systems operational.",
+          "icon": null,
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Documentation",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Privacy Policy",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Support",
+          "icon": null,
+          "route": "#",
+          "active": true
+        }
+      ],
+      "title": "Status Page - Status Refresh Utility"
+    }
+  }
+}

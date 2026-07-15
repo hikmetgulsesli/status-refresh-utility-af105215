@@ -1,0 +1,11 @@
+[
+  {
+    "screenId": "5b6fa413a5e14aa4b036af7ca45a66c3",
+    "title": "Status Page - Status Refresh Utility",
+    "htmlFile": "5b6fa413a5e14aa4b036af7ca45a66c3.html",
+    "deviceType": "DESKTOP",
+    "surfaceIds": [
+      "SURF_STATUS_PAGE"
+    ]
+  }
+]

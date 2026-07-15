@@ -1,0 +1,37 @@
+# SETFARM_STITCH_V3_GENERATION_CONTRACT
+
+contract_schema: setfarm.design-generation-targets.v1
+product_spec_hash: 2418a21597d5e59cc8b9b34f46ee616eb3f0a681ca35ead61fb2c68cb95f7fa5
+stage_id: all-targets-preview
+Generate exactly 1 screens and no others in this response.
+Target device type: DESKTOP.
+All visible user-facing text must be in en.
+
+## EXACT_SCREEN_TARGETS
+SCREEN_TARGET_1:
+- target_ref: TARGET_STATUS_PAGE
+- surface_ref: SURF_STATUS_PAGE
+- exact_screen_title: Status Page - Status Refresh Utility
+- surface_kind: page
+- exact_actions:
+  - action_ref: ACT_REFRESH_STATUS
+    visible_intent: Refresh Status
+    exact_action_attribute: data-action="ACT_REFRESH_STATUS"
+    exact_input_mappings: none
+    exact_observable_selectors: [{"observableRef":"OBS_BUTTON_ENABLED_AFTER","selector":{"actionRef":"ACT_REFRESH_STATUS","kind":"control"}},{"observableRef":"OBS_BUTTON_ENABLED_RELOAD","selector":{"actionRef":"ACT_REFRESH_STATUS","kind":"control"}},{"observableRef":"OBS_BUTTON_VISIBLE_AFTER","selector":{"actionRef":"ACT_REFRESH_STATUS","kind":"control"}},{"observableRef":"OBS_BUTTON_VISIBLE_RELOAD","selector":{"actionRef":"ACT_REFRESH_STATUS","kind":"control"}},{"observableRef":"OBS_ROUTE_STAY_AFTER","selector":{"kind":"surface","surfaceRef":"SURF_STATUS_PAGE"}},{"observableRef":"OBS_ROUTE_STAY_RELOAD","selector":{"kind":"surface","surfaceRef":"SURF_STATUS_PAGE"}},{"observableRef":"OBS_STATUS_TEXT_AFTER","selector":{"kind":"accessibility","name":"Status refreshed","role":"status","surfaceRef":"SURF_STATUS_PAGE"}},{"observableRef":"OBS_STATUS_TEXT_RELOAD","selector":{"kind":"accessibility","name":"Status refreshed","role":"status","surfaceRef":"SURF_STATUS_PAGE"}},{"observableRef":"OBS_STATUS_VALUE_AFTER","selector":{"kind":"accessibility","name":"refreshed","role":"status","surfaceRef":"SURF_STATUS_PAGE"}},{"observableRef":"OBS_STATUS_VALUE_RELOAD","selector":{"kind":"accessibility","name":"refreshed","role":"status","surfaceRef":"SURF_STATUS_PAGE"}}]
+
+## MACHINE_READABLE_COMPLETENESS_RULES
+- The returned screen title must equal exact_screen_title byte-for-byte. Do not abbreviate, translate, normalize, decorate, or rename it.
+- Return exactly one screen for each SCREEN_TARGET and no style-guide, assistant, summary, moodboard, PRD, or extra canvas.
+- For every exact_actions entry, render exactly one actionable HTML element and preserve the exact data-action="ACT_*" attribute on that same button, link, or input element.
+- Do not put ACT_* only in prose, labels, nearby wrappers, comments, scripts, or a different DOM element; the actionable element itself owns data-action.
+- For every exact_input_mappings entry, exactly one value-providing element must preserve data-action-input="ACT_*.field". A checkbox/action element may carry both data-action and data-action-input when it supplies its own value.
+- For every exact_observable_selectors entry, preserve the exact selector contract: control selectors bind the same data-action element, surface selectors require one wrapper with data-surface-id equal to the exact SURF_* ref, and accessibility selectors require the exact role and accessible name on one element.
+- Do not emit any button, link, input, textarea, select, checkbox, tab, menu item, or other actionable control that is not declared by exact_actions or exact_input_mappings.
+- Disabled-looking, placeholder, icon-only, overflow, breadcrumb, navigation, and decorative controls are still controls and are forbidden unless declared above.
+- Custom data-action and data-action-input attributes are contractual source, not visual copy. Preserve their exact case and spelling in exported HTML.
+
+## PRODUCT_SCOPE
+Product: Status Refresh Utility
+Goals: Provide a single-page status utility at /status where pressing the Refresh button sets application state to 'refreshed', persists that status to local storage across page reloads, displays the text 'Status refreshed' with value 'refreshed', keeps the Refresh button visible and enabled, and remains on /status.
+Do not invent product behavior outside the typed targets above.

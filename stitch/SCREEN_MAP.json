@@ -1,0 +1,11 @@
+[
+  {
+    "screenId": "5b6fa413a5e14aa4b036af7ca45a66c3",
+    "name": "Status Page - Status Refresh Utility",
+    "type": "app-screen",
+    "description": "Status Page ProductSpec surface",
+    "surfaceIds": [
+      "SURF_STATUS_PAGE"
+    ]
+  }
+]
